@@ -37,7 +37,7 @@ export class RegistroSeComponent implements OnInit {
       ...formData
     };
     //to do reemplazar url por url desplegada// 
-    this.http.post<any>("http://localhost:3000/reserva/create", body)
+    this.http.post<any>("https://bestplayer-back.herokuapp.com/reserva/create", body)
       .subscribe((data) => {
         //por hacer acciones formulario// 
         console.log('data enviada', data);
