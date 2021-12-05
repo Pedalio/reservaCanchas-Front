@@ -23,7 +23,7 @@ const routes: Routes = [
     component: PublicLayoutComponent,
     children: [
       {path:'registroSe', component: RegistroSeComponent},
-      {path: '**', redirectTo: 'dashboard'}
+      {path: '**', redirectTo: 'secure/dashboard'}
       
     ]
 },
